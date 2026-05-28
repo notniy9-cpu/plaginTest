@@ -1,0 +1,29 @@
+# Настройки аукциона
+settings:
+  min-price: 10
+  max-price: 1000000
+  max-items-per-player: 5
+  expire-time-hours: 48
+
+# Настройки экономики
+economy:
+  # Тип: COMMAND (команды), VAULT (если есть Vault), NONE (отключена)
+  type: COMMAND
+  # Команды для работы с деньгами
+  withdraw-command: "money take %player% %amount%"
+  give-command: "money give %player% %amount%"
+  check-command: "money balance %player%"
+
+# Сообщения
+messages:
+  sold: "&a[Аукцион] Вы успешно выставили предмет на продажу!"
+  bought: "&a[Аукцион] Вы купили предмет за %price%$!"
+  earned: "&a[Аукцион] Игрок %player% купил ваш товар. Вам зачислено %price%$!"
+  no-money: "&c[Аукцион] У вас недостаточно денег!"
+  no-space: "&c[Аукцион] У вас нет места в инвентаре!"
+  sell-limit: "&c[Аукцион] Вы выставили максимум предметов!"
+  min-price-error: "&c[Аукцион] Цена не может быть ниже %min%$"
+  max-price-error: "&c[Аукцион] Цена не может быть выше %max%$"
+  not-found: "&c[Аукцион] Предмет не найден!"
+  expired-removed: "&e[Аукцион] Просроченные лоты удалены"
+  economy-error: "&c[Аукцион] Ошибка экономики! Проверьте настройки в config.yml"
